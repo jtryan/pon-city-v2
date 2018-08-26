@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-require('./app/utils/initLeds')(app);
+
 require('./app/routes/ledRoutes')(app);
 
 // if (process.env.NODE_ENV === 'production') {

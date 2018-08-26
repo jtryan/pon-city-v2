@@ -1,5 +1,5 @@
 const leds = require('./../models/leds');
-const relayPower = require('./../utils/initLeds');
+const relayPower = require('./../utils/relay');
 
 module.exports = app => {
 
