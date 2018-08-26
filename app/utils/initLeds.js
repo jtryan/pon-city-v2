@@ -12,9 +12,12 @@ module.exports = app => {
 
   const ledArray = [led0, led1, led2, led3, led4, led5];
 
-  ledArray.forEach( value => {
-    value.writeSync(1);
-  })
+  const off = () => {
+    ledArray.forEach( value => {
+      value.writeSync(0);
+    })
+  }
+  
 
 };
 

@@ -1,6 +1,19 @@
 const leds = require('./../models/leds');
+const relayPower = require('./../utils/initLeds');
 
 module.exports = app => {
+
+  app.post('/leds/allon', function(req, res, next) {
+    relayPower.ledArray.forEach( value => {
+      value.writeSync(1);
+    })
+  });
+
+  app.post('/leds/alloff', function(req, res, next) {
+    relayPower.ledArray.forEach( value => {
+      value.writeSync(1);
+    })
+  });
 
   app.get('/leds', function(req, res, next) {
     console.log(leds)

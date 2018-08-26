@@ -1,10 +1,8 @@
 const express = require('express');
 const createError = require('http-errors');
-const initSwitch = re
 
 const app = express();
 
-// app.set('view engine', 'pug');
 
 // need any of this?
 app.use(express.json());
