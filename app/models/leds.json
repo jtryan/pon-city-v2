@@ -1,0 +1,52 @@
+{
+  "pi": {
+	"Model": "Pi Model 3B",
+	"Hardware": "BCM2835",
+	"Revision": "a22082",
+	"Serial": "000000009c300706"
+  },
+  "leds": {
+	"1": {
+	  "id": 1,
+	  "name": "LED 1",
+	  "value": false,
+	  "gpio": 4,
+	  "pin": 7
+	},
+	"2": {
+	  "id": 2,
+	  "name": "LED 2",
+	  "value": false,
+	  "gpio": 17,
+	  "pin": 11
+	},
+	"3": {
+	  "id": 3,
+	  "name": "LED 3",
+	  "value": false,
+	  "gpio": 27,
+	  "pin": 13
+	},
+	"4": {
+	  "id": 4,
+	  "name": "LED 4",
+	  "value": false,
+	  "gpio": 22,
+	  "pin": 15
+	},
+	"5": {
+	  "id": 5,
+	  "name": "LED 5",
+	  "value": false,
+	  "gpio": 5,
+	  "pin": 29
+	},
+	"6": {
+	  "id": 6,
+	  "name": "LED 6",
+	  "value": false,
+	  "gpio": 6,
+	  "pin": 31
+	}
+  }
+}
