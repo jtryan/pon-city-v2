@@ -1,6 +1,7 @@
 const leds = require('./../models/leds');
 const ledArray = require('./../utils/relay');
 
+//next not used yet
 module.exports = app => {
 
   app.post('/leds/allon', function(req, res, next) {
@@ -20,7 +21,6 @@ module.exports = app => {
   });
 
   app.get('/leds', function(req, res, next) {
-    console.log(leds)
     res.send(leds);
     next();
   });
@@ -33,8 +33,7 @@ module.exports = app => {
   // value 0 or 1
   app.put('/leds/:id', function(req, res, next) {
     var selectedLed = leds[req.params.id];
-    ledArray[selectedLed].writeSync(req.body.value);
-    // selectedLed.value = req.body.value;
+    ledArray[selectedLed.id].writeSync(req.body.value);
     res.send(selectedLed);
     next();
   });
