@@ -17,7 +17,6 @@ module.exports = app => {
       value.writeSync(0);
     })
   }
-  
 
 };
 
